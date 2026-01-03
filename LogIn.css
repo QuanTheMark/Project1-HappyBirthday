@@ -59,12 +59,12 @@
     width:100%;
     height: 100%;
     font-size:1.1em;
-    color:white;
+    color:rgb(149, 121, 121);
     
 }
 
 .input-box input:focus ~label,
-.input-box input:valid ~label{
+.input-box input:not(:placeholder-shown) ~label{
   top: -5px;
 }
 
