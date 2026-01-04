@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="LogIn.css">
+    <script src="logIn.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -14,17 +15,57 @@
         <div class ="input-box">
             <input type="Email" id="Email" placeholder ="" 
             pattern = "^[0-9a-zA-Z]+@[0-9a-zA-Z]+\.[a-zA-Z]{2,}$" required>
-            <label for = "Email">Email (VD: abcxyz@123.com)</label>
+            <label for = "Email">Email</label>
         </div>
         <div class ="input-box">
             <input type ="Password" id="Password" placeholder =""
             pattern ="^[0-9a-zA-Z@!#$%^&*~]{6,}$" required>
+            <label for ="Password">Password</label>
+        </div>
+        <div class = "checkID">
+          <input type="checkbox" id ="check">
+          <label for="check">Remember me</label>
+          <span>
+          <a href ="#">Forgot password?</a>
+          </span>
+        </div>
+        <button type = "submit" class ="btn-entry" id="getIn">Entry</button>
+        <div class ="Register">
+          <p>Don't have an account?</p>
+          <a href ="#">Register</a>
+        </div>
+    </form>
+    </div>
+    <div class ="Re-size">
+    <h2>Register</h2>
+    <form action ="#">
+        <div class ="input-box">
+            <input type="Username" id="Username" placeholder ="" 
+            pattern = "^[0-9a-zA-Z]{5,}$" required>
+            <label for = "Username">Username (VD: abcxy)</label>
+        </div>
+        <div class ="input-box">
+            <input type="Email" id="reEmail" placeholder ="" 
+            pattern = "^[0-9a-zA-Z]+@[0-9a-zA-Z]+\.[a-zA-Z]{2,}$" required>
+            <label for = "Email">Email (VD:abcdx@123.com)</label>
+        </div>
+        <div class ="input-box">
+            <input type ="Password" id="rePassword" placeholder =""
+            pattern ="^[0-9a-zA-Z@!#$%^&*~]{6,}$" required>
             <label for ="Password">Password (ít nhất 6 kí tự)</label>
         </div>
-        <button type = "submit" class ="btn-entry">Entry</button>
+        <div class = "reCheck">
+          <input type="checkbox" id ="Agree">
+          <label for="Agree">Agree with all contracts</label>
+        </div>
+        <button type = "submit" class ="btn-re" id="ok">Register</button>
+        <div class ="Login">
+          <p>Already have an account?</p>
+          <a href ="#">Login</a>
+        </div>
     </form>
     </div>
   </div>
-    
+
 </body>
 </html>

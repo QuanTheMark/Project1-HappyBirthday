@@ -4,8 +4,9 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     
+    
 }
-
+/* Login */
 .form-box{
     display:flex;
     flex-direction: column;
@@ -13,6 +14,7 @@
     align-items: center;
     height: 100vh;
     background: linear-gradient(rgb(31, 34, 34));
+   
    
     
 }
@@ -26,7 +28,7 @@
     border-radius: 5px;
     border: 2px solid;
     width: 500px;
-    height: 400px;
+    height: 550px;
     box-shadow: 10px 10px 20px #171616;
     color: white;
     overflow: hidden;
@@ -35,6 +37,43 @@
 .box-size h2{
     font-size: 3em;
     text-align: center;
+}
+.checkID{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.checkID input{cursor: pointer;}
+
+.checkID label{
+    position: absolute;
+    left: 15px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+.Register{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+.checkID a, .Register a{
+text-decoration: none;
+color: rgb(186,186,186);
+font-size: 1.1em;
+border: none;
+outline: none;
+}
+
+.Register p{
+    font-size: 1.1em;
+}
+
+a:hover{
+    cursor: pointer;
+    color: rgb(11, 239, 11);
+
 }
 
 .input-box{
@@ -80,6 +119,7 @@
     font-weight: 100;
     border:none;
     outline:none;
+    margin:30px 0;
 }
 
 .btn-entry:hover{
@@ -126,4 +166,176 @@
         width:100%;
         height:50px;
     }
+}
+
+.form-box{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgb(31, 34, 34));
+   
+   
+    
+}
+/* Register */
+.Re-size{
+    display:none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(30, 30, 32);
+    border-radius: 5px;
+    border: 2px solid;
+    width: 500px;
+    height: 600px;
+    box-shadow: 10px 10px 20px #171616;
+    color: white;
+    overflow: hidden;
+    
+    
+}
+
+.Re-size h2{
+    font-size: 3em;
+    text-align: center;
+}
+.reCheck{
+    position: relative;
+    margin: 30px 0px;
+}
+.reCheck input{cursor: pointer;}
+
+.reCheck label{
+    position: absolute;
+    left: 15px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+.Login{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 1.1em;
+}
+.reCheck a, .Login a{
+text-decoration: none;
+color: rgb(186,186,186);
+font-size: 1.1em;
+border: none;
+outline: none;
+}
+
+.Login p{
+    font-size: 1.1em;
+}
+
+a:hover{
+    cursor: pointer;
+    color: rgb(11, 239, 11);
+
+}
+
+.input-box{
+    position: relative;
+    width: 400px;
+    height: 50px;
+    border-bottom: 2px solid white ;
+    margin: 30px 0;
+    color: white;
+    font-size: 1.1em;
+}
+
+.input-box label{
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    transition: 0.5s ease;
+    z-index:1;
+}
+
+.input-box input{
+    outline:none;
+    background: transparent;
+    border: none;
+    width:100%;
+    height: 100%;
+    font-size:1.1em;
+    color:rgb(255, 255, 255);
+}
+
+.input-box input:focus ~label,
+.input-box input:not(:placeholder-shown) ~label{
+  top: -5px;
+  
+}
+
+.btn-re{
+    height: 50px;
+    width: 400px;
+    font-size: 1.1em;
+    font-weight: 100;
+    border:none;
+    outline:none;
+}
+
+.btn-re:hover{
+    background: rgb(12, 199, 12);
+    box-shadow: 20px 20px 30px rgb(33, 60, 33);
+}
+
+@media screen and (max-width: 550px){
+
+    .Re-size{
+        flex-wrap: wrap;
+        width:95%;
+        height: 600px;
+       
+        
+    }
+    .input-box{
+        margin: 50px 5px;
+        width: 100%;
+        height: 50px;
+    }
+
+    .btn-re{
+        height:50px;
+        width:100%;
+    }
+    .Login{
+        width:100%;
+    }
+
+}
+
+@media screen and (max-height: 600px){
+    .Re-size{
+        flex-wrap: wrap;
+        align-items: normal;
+        width:100%;
+        height:100%;
+     
+    }
+
+    .input-box{
+        margin: 20px 5px;
+        width: 95%;
+     
+    }
+    .btn-re{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+    }
+    .Login{
+        width:95%;
+    }
+    
 }
