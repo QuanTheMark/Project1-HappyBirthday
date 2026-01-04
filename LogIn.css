@@ -39,16 +39,14 @@
     text-align: center;
 }
 .checkID{
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap:50px;
 }
 .checkID input{cursor: pointer;}
 
 .checkID label{
-    position: absolute;
-    left: 15px;
     font-size: 1.1em;
     cursor: pointer;
 }
