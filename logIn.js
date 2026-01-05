@@ -2,7 +2,7 @@
 const register = document.querySelector('.Register a');
 const formBox = document.querySelector('.box-size');
 const reBox = document.querySelector('.Re-size');
-
+const forgot = document.querySelector('.fo-size');
 register.addEventListener('click', function(e){
     e.preventDefault();
     formBox.style.display='none';
@@ -46,13 +46,26 @@ alert("Đăng ký thành công");
 localStorage.setItem("user", JSON.stringify(user));
 });
 
+/*forgot password*/
+const getBack = document.querySelector(".goBack a");
+getBack.addEventListener("click" , function(e){
+    e.preventDefault();
+    forgot.style.display= "none";
+    formBox.style.display= "flex";
+});
 
-
+const forgotpassword =document.querySelector(".Forgot a");
+forgotpassword.addEventListener("click", function(e){
+  e.preventDefault();
+    formBox.style.display ="none";
+    forgot.style.display = "flex";
+});
 
 //Kiểm tra login
 const Log = document.getElementById("getIn");
 Log.addEventListener('click', function(e){
   e.preventDefault();
+  
 
   const logEmail = document.getElementById("Email").value.trim();
   const logPassword = document.getElementById("Password").value;
@@ -79,8 +92,12 @@ Log.addEventListener('click', function(e){
   }
 
   // sai password
-  if (logPassword !== Inuser.password) {
+  else if (logPassword !== Inuser.password) {
     alert("Sai password ông cố!");
     return;
   }
+  else{
+    window.location.href ="troll.html";
+  }
 });
+

@@ -11,15 +11,15 @@
   <div class ="form-box">
     <div class ="box-size">
     <h2>LOGIN</h2>
-    <form action ="troll.html" method = "get" class ="view-box">
+    <form actiom ="#">
         <div class ="input-box">
-            <input type="Email" id="Email" required placeholder =" " 
-            pattern = "^[0-9a-zA-Z]+@[0-9a-zA-Z]+\.[a-zA-Z]{2,}$">
+            <input type="Email" id="Email" placeholder =" " 
+            pattern = "^[0-9a-zA-Z]+@[0-9a-zA-Z]+\.[a-zA-Z]{2,}$" required >
             <label for = "Email">Email</label>
         </div>
         <div class ="input-box">
-            <input type ="Password" id="Password" required placeholder =" "
-            pattern ="^[0-9a-zA-Z@!#$%^&*~]{6,}$">
+            <input type ="Password" id="Password"  placeholder =" "
+            pattern ="^[0-9a-zA-Z@!#$%^&*~]{6,}$" required>
             <label for ="Password">Password</label>
         </div>
         <div class = "checkID">
@@ -27,7 +27,7 @@
           <input type="checkbox" id ="check">
           <label for="check">Remember me</label>
           </span>
-          <span>
+          <span class ="Forgot">
           <a href ="#">Forgot password?</a>
           </span>
         </div>
@@ -38,6 +38,7 @@
         </div>
     </form>
     </div>
+
     <div class ="Re-size">
     <h2>Register</h2>
     <form action ="#">
@@ -63,6 +64,26 @@
         <button type = "submit" class ="btn-re" id="ok">Register</button>
         <div class ="Login">
           <p>Already have an account?</p>
+          <a href ="#">Login</a>
+        </div>
+    </form>
+    </div>
+
+    <div class ="fo-size">
+    <h2>RESET</h2>
+    <form action ="#">
+        <div class ="input-box">
+            <input type="Email" id="fo-Email" placeholder =" " 
+            pattern = "^[0-9a-zA-Z]+@[0-9a-zA-Z]+\.[a-zA-Z]{2,}$" required >
+            <label for = "fo-Email">Email</label>
+        </div>
+        <div class ="input-box">
+            <input type ="Password" id="fo-Password"  placeholder =" "
+            pattern ="^[0-9a-zA-Z@!#$%^&*~]{6,}$" required>
+            <label for ="fo-Password">CAPCHA</label>
+        </div>
+        <button type = "submit"  class="reset">Reset</button>
+        <div class ="goBack">
           <a href ="#">Login</a>
         </div>
     </form>

@@ -6,6 +6,16 @@
     
     
 }
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px #1e1e1e inset !important;
+  -webkit-text-fill-color: #fff !important;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+
 /* Login */
 .form-box{
     display:flex;
@@ -70,7 +80,7 @@ outline: none;
 
 a:hover{
     cursor: pointer;
-    color: rgb(11, 239, 11);
+    color: rgb(80, 176, 80);
 
 }
 
@@ -221,11 +231,6 @@ outline: none;
     font-size: 1.1em;
 }
 
-a:hover{
-    cursor: pointer;
-    color: rgb(11, 239, 11);
-
-}
 
 .Re-size .input-box{
     position: relative;
@@ -325,4 +330,129 @@ a:hover{
 
     }
     
+}
+/* forgot password */
+.fo-size{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(30, 30, 32);
+    border-radius: 5px;
+    border: 2px solid;
+    width: 500px;
+    height: 550px;
+    box-shadow: 10px 10px 20px #171616;
+    color: white;
+    overflow: hidden;
+}
+
+.fo-size h2{
+    font-size: 3em;
+    text-align: center;
+}
+
+.fo-size .input-box{
+    position: relative;
+    width: 400px;
+    height: 50px;
+    border-bottom: 2px solid white ;
+    margin: 30px 0;
+    color: white;
+    font-size: 1.1em;
+}
+
+.fo-size .input-box label{
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+    transition: 0.5s ease;
+    z-index:1;
+}
+
+.goBack a{
+    text-decoration: none;
+    font-size: 1.5em;
+    gap:50px;
+    display:flex;
+    flex-direction: column;
+    margin: 50px 0;
+}
+
+.goBack a:hover{
+    cursor: pointer;
+    color: lightgreen;
+}
+.fo-size .input-box input:focus~label,
+.fo-size .input-box input:not(:placeholder-shown)~label{
+    top: -5px;
+}
+
+.fo-size .input-box input{
+    outline:none;
+    background: transparent;
+    border: none;
+    width:100%;
+    height: 100%;
+    font-size:1.1em;
+    color:rgb(255, 255, 255);
+}
+
+.reset{
+    height: 50px;
+    width: 400px;
+    font-size: 1.1em;
+    font-weight: 100;
+    border:none;
+    outline:none;
+    margin: 20px 0;
+}
+
+.reset:hover{
+    background: rgb(12, 199, 12);
+    box-shadow: 20px 20px 30px rgb(33, 60, 33);
+}
+
+@media screen and (max-width: 550px){
+
+    .fo-size{
+        flex-wrap: wrap;
+        width:95%;
+        height: 500px;
+       
+        
+    }
+    .fo-size .input-box{
+        margin: 50px 5px;
+        width: 100%;
+        height: 50px;
+    }
+
+    .reset{
+        height:50px;
+        width:100%;
+    }
+
+}
+
+@media screen and (max-height: 600px){
+    .fo-size{
+        flex-wrap: wrap;
+        width:100%;
+        height: 80%;
+        padding: 50px;
+     
+    }
+
+    .fo-size .input-box{
+        margin: 20px 5px;
+        width: 100%;
+        height: 50px;
+    }
+    .reset{ 
+        width:100%;
+        height:50px;
+    }
 }
