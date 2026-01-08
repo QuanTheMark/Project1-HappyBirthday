@@ -17,6 +17,14 @@ Login.addEventListener('click', function(e){
     reBox.style.display ='none';
 });
 
+//Get Start
+const myStart =document.querySelector('.Start');
+myStart.addEventListener('click', function(){
+  formBox.style.display ='flex';
+});
+
+
+//Đăng ký tài khoản
 const update = document.getElementById("ok");
 const agree = document.getElementById("Agree");
 update.addEventListener('click', function(e){

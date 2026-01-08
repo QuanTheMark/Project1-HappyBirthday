@@ -1,11 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    
+    font-family:'Fredoka' ;
     
 }
+
+body{ background: linear-gradient(90deg, #535ab3db 50%, #79acdd 100%);}
+
+button, a{ cursor: pointer;}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -15,21 +21,48 @@ input:-webkit-autofill:active {
 }
 
 
-/* Login */
+
 .form-box{
-    display:flex;
+    position: relative;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(rgb(31, 34, 34));
-   
-   
+
+}
+
+.Menu{
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    color: rgb(0, 0, 0);
+    row-gap: 100px;
+    z-index: 0;
+    overflow: hidden;
+}
+/* vào trang chính */
+.Menu .Start{
+    outline: none;
+    border: none;
+    width: 60%;
+    height: 50px;
+    border-radius: 30px;
+    text-align: center;
+    background: linear-gradient(90deg, #3b3bd8 20%, #62adff 100%);
+    color: white;
+    font-size: 1.1em;
     
 }
 
+
+
+/* Login */
 .box-size{
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -41,6 +74,7 @@ input:-webkit-autofill:active {
     box-shadow: 10px 10px 20px #171616;
     color: white;
     overflow: hidden;
+    z-index: 1;
 }
 
 .box-size h2{
@@ -77,11 +111,7 @@ outline: none;
     font-size: 1.1em;
 }
 
-a:hover{
-    cursor: pointer;
-    color: rgb(80, 176, 80);
-
-}
+a:hover{  color: rgb(80, 176, 80);}
 
 .box-size .input-box{
     position: relative;
@@ -188,6 +218,7 @@ a:hover{
     height: 600px;
     box-shadow: 10px 10px 20px #171616;
     color: white;
+    z-index: 1;
     overflow: hidden;
     
     
@@ -343,6 +374,7 @@ outline: none;
     height: 550px;
     box-shadow: 10px 10px 20px #171616;
     color: white;
+    z-index: 1;
     overflow: hidden;
 }
 
@@ -372,6 +404,7 @@ outline: none;
 }
 
 .goBack a{
+    color: white;
     text-decoration: none;
     font-size: 1.5em;
     gap:50px;
@@ -380,10 +413,7 @@ outline: none;
     margin: 50px 0;
 }
 
-.goBack a:hover{
-    cursor: pointer;
-    color: lightgreen;
-}
+.goBack a:hover{color: lightgreen;}
 .fo-size .input-box input:focus~label,
 .fo-size .input-box input:not(:placeholder-shown)~label{
     top: -5px;
