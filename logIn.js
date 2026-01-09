@@ -19,8 +19,10 @@ Login.addEventListener('click', function(e){
 
 //Get Start
 const myStart =document.querySelector('.Start');
+const myOpen = document.tagName("form");
 myStart.addEventListener('click', function(){
-  formBox.style.display ='flex';
+ formBox.style.display ='flex';
+ myOpen.style.display = 'block';
 });
 
 
