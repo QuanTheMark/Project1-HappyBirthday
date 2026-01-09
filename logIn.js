@@ -105,7 +105,9 @@ Log.addEventListener('click', function(e){
     return;
   }
   else{
-    window.location.href ="troll.html";
+    window.location.href ="Main.html";
   }
 });
+
+//Thẻ spam
 
